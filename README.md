@@ -1,9 +1,9 @@
 # monkey-see
-This project is for the [Balik Kampung 2024](https://www.instagram.com/balik.kampoeng/) initiative, where one of the projects is to install camera traps to detect orangutan movements and alert nearby stations to inform people living nearby.
+This project is for the [Balik Kampung 2024](https://www.instagram.com/balik.kampoeng/) initiative, where one of the projects is to install camera traps to detect orangutan movements and alert nearby patrol stations to inform people living nearby.
 
 ![WhatsApp Image 2024-06-03 at 18 35 32](https://github.com/AbrahamOsmondE/monkey-see/assets/82792334/62c3608e-b32d-4f4a-9705-4cc67e90d6c3)
 
-This repository works on the highlighted part of the image, where the raspberry pi will receive an image, and forward it to a Telegram channel, and an email address.
+This repository works on the highlighted part of the image, where the Raspberry Pi will receive an image, and forward it to a Telegram channel and an email address.
 
 ## Considerations
 The following are some considerations that need to be taken into account when designing the solution
