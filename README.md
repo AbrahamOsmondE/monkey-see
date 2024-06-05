@@ -19,3 +19,18 @@ With the considerations above, we decided to implement the solution as follows:
 3. We will be using the Gmail API to send the image to an email address
 
 With this, we can ensure that the solution will be free of cost and changes to how we send to the Telegram channel or email address can be fixed remotely. This does not solve hardware issues with the Raspberry Pi, however. Lambda is free for the first million requests per month and for 400000 GB seconds of compute time. Synchronous functions also allow a 6 MB payload. This allows the solution to be costless
+
+## Tests
+To run tests, you will need the following environment variables
+```
+// For testing lambda handler
+TELEGRAM_TOKEN=<your-telegram-bot-token>
+CHAT_ID=<your-channel-or-chat-id>
+```
+
+And then run the python file `send_to_telegram_test.py`
+
+## Deployment
+1. From the repository root, run `make package-lambda`
+2. Create a new python lambda function on AWS
+3. Upload the .zip file created on the output folder to your lambda function
