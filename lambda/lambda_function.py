@@ -6,10 +6,7 @@ import io
 
 def send_to_telegram(image):
   TOKEN = os.environ['TELEGRAM_TOKEN']
-  TOKEN = "6814548971:AAGWYuWQXUWVvrnbNjx3hUT__wyuLCriuOM"
-
   CHAT_ID = os.environ['CHAT_ID']
-  CHAT_ID = "-1002179553593"
 
   bot = telepot.Bot(TOKEN)
   try:
