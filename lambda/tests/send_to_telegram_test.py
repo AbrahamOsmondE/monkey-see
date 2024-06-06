@@ -12,7 +12,7 @@ def should_send_image_to_telegram():
   try:
     image = get_image(os.path.join(here, 'monkey.jpg'))
 
-    send_to_telegram(image)
+    send_to_telegram(image, "file name: monkey.jpg")
   except Exception as e:
     print(e)
     return
